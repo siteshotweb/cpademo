@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SiteShot Admin — Firms, Stats &amp; Tax Rates</title>
+<script>
+  // Apply the saved theme (or default to light) before first paint, so
+  // there's no flash of the wrong theme. Shared key across all pages in
+  // this app so the preference follows the CPA between index/app/tax-rates.
+  (function(){
+    var THEME_KEY = 'ss_theme';
+    var theme = 'light';
+    try{ theme = localStorage.getItem(THEME_KEY) || 'light'; }catch(e){}
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.style.colorScheme = theme;
+  })();
+</script>
+<style>
+  :root{
+    --radius:12px;
+    --mono: ui-monospace, "SF Mono", "IBM Plex Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, "SF Pro Display", "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+    /* Light theme (default) */
+    --bg:#FAF7F5; --surface:#FFFFFF; --surface-alt:#F1EAE6;
+    --ink:#1C1C1E; --ink-muted:#68666B; --ink-faint:#8B8790;
+    --accent:#C1694F; --accent-light:rgba(193,105,79,.12); --accent-ink:#FFFFFF;
+    --warn:#B9843F; --warn-light:rgba(185,132,63,.12);
+    --danger:#C15B52; --danger-light:rgba(193,91,82,.12);
+    --border:#E3DAD3;
+    --header-bg:rgba(250,247,245,.82);
+  }
+  :root[data-theme="dark"]{
+    --bg:#1C1C1E; --surface:#2C2C2E; --surface-alt:#242426;
+    --ink:#F3ECE9; --ink-muted:#B4B4B9; --ink-faint:#9A9A9F;
+    --accent:#E0A899; --accent-light:rgba(224,168,153,.14); --accent-ink:#1C1C1E;
+    --warn:#E0B899; --warn-light:rgba(224,184,153,.12);
+    --danger:#E09B99; --danger-light:rgba(224,155,153,.12);
+    --border:#3A3A3C;
+    --header-bg:rgba(28,28,30,.8);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;transition:background .15s,color .15s}
+  .app{max-width:760px;margin:0 auto;padding:28px 16px 80px}
+  header.top{
+    display:flex;align-items:baseline;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:8px;
+    padding:14px 16px 18px;position:sticky;top:0;z-index:20;margin-left:-16px;margin-right:-16px;
+    background:var(--header-bg);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
+    border-bottom:0.5px solid var(--border);
+  }
+  .theme-toggle-btn{font-size:15px;line-height:1;padding:6px 10px}
+  header.top h1{
+    font-size:22px;font-weight:800;margin:0;letter-spacing:-0.02em;color:var(--accent);
+    background:linear-gradient(135deg,#F0C4B7 0%,#E0A899 45%,#C98876 100%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  header.top .tag{font-family:var(--mono);font-size:11px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.06em}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:16px;box-shadow:0 1px 0 rgba(255,255,255,.02) inset,0 6px 18px rgba(0,0,0,.18)}
+  .card h2{font-size:15px;font-weight:700;margin:0 0 4px;color:var(--accent)}
+  .card .sub{font-size:12.5px;color:var(--ink-muted);margin:0 0 16px}
+  .row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+  .field{display:flex;flex-direction:column;gap:4px;flex:1;min-width:140px}
+  .field label{font-size:11.5px;color:var(--ink-muted)}
+  .field .hint{font-size:10.5px;color:var(--ink-faint)}
+  input,select,textarea{font-family:var(--sans);font-size:13.5px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:var(--surface-alt);color:var(--ink);width:100%}
+  textarea{font-family:var(--mono);font-size:12px;resize:vertical}
+  input::placeholder{color:var(--ink-faint)}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  button.btn{
+    font-family:var(--sans);font-size:13px;font-weight:600;padding:10px 16px;border-radius:999px;
+    border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;
+    transition:transform .12s ease,opacity .12s ease,background .15s;
+  }
+  button.btn:hover{background:rgba(224,168,153,.08)}
+  button.btn:active{transform:scale(.96);opacity:.85}
+  button.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);border-radius:var(--radius);font-weight:700;padding:14px 18px;box-shadow:0 4px 14px rgba(224,168,153,.22)}
+  button.btn.primary:hover{background:#E7B4A6}
+  button.btn.ghost{border-color:transparent;color:var(--ink-muted);background:var(--surface-alt)}
+  button.btn.ghost:hover{color:var(--accent)}
+  button.btn.small{padding:6px 12px;font-size:12px}
+  button.btn.danger{border-color:var(--danger);color:var(--danger)}
+  button.btn.danger:hover{background:var(--danger-light)}
+  button.btn:disabled{opacity:.4;cursor:default}
+  .badge{display:inline-block;font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;padding:3px 8px;border-radius:20px;border:1px solid var(--border)}
+  .badge.warn{background:var(--warn-light);color:var(--warn);border-color:rgba(224,184,153,.3)}
+  .banner{background:var(--accent-light);color:var(--accent);border:1px solid rgba(224,168,153,.3);border-radius:var(--radius);padding:12px 14px;font-size:13px;margin-bottom:14px}
+  .banner.warn{background:var(--warn-light);color:var(--warn);border-color:rgba(224,184,153,.3)}
+  table.brackets{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+  table.brackets th{text-align:left;font-size:11px;color:var(--ink-muted);font-weight:600;padding:6px 4px;border-bottom:.5px solid var(--border)}
+  table.brackets td{padding:6px 4px;border-bottom:.5px solid var(--border);vertical-align:middle}
+  table.brackets input{width:100%}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:rgba(44,44,46,.92);backdrop-filter:blur(12px);color:var(--accent);border:1px solid var(--border);padding:10px 18px;border-radius:999px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:100}
+  .toast.show{opacity:1}
+  #gate{max-width:360px;margin:80px auto;text-align:center}
+  #gate input{text-align:center;letter-spacing:.1em}
+  code.inline{font-family:var(--mono);font-size:12px;background:var(--surface-alt);border:1px solid var(--border);padding:1px 6px;border-radius:5px}
+  .stub-note{font-size:11px;color:var(--ink-faint);margin-top:6px}
+  .dirty-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--warn);margin-left:6px;vertical-align:middle;display:none}
+  .dirty .dirty-dot{display:inline-block}
+</style>
+</head>
+<body>
+
+<!--
+  ============================================================================
+  THIS FILE IS THE DATA SOURCE. Everything below in the "rates-data" block is
+  what every per-CPA paystub site reads at load time. Edit rates through the
+  form on this page (opens nicely in a browser) rather than hand-editing the
+  JSON, unless you're comfortable with the format.
+
+  Simple client-side gate below — deterrent against casual clicks only, not
+  real security: this is a static file, so anyone who views source can read
+  the passcode. Don't rely on it for anything sensitive.
+  ============================================================================
+-->
+<script type="application/json" id="rates-data">
+{
+  "PAY_PERIODS_PER_YEAR": 26,
+  "CPP_RATE": 0.0595,
+  "CPP_BASE_RATE": 0.0495,
+  "CPP_EXEMPT_ANNUAL": 3500,
+  "CPP_MAX_ANNUAL": 4230.45,
+  "CPP_MAX_ANNUAL_BASE": 3519.45,
+  "CPP_YMPE": 74600,
+  "CPP_YAMPE": 85000,
+  "CPP2_RATE": 0.04,
+  "CPP2_MAX_ANNUAL": 416.00,
+  "EI_RATE": 0.0163,
+  "EI_MAX_ANNUAL": 1123.07,
+  "EI_EMPLOYER_MULTIPLIER": 1.4,
+  "FED_BPA": 16452,
+  "FED_CEA": 1501,
+  "FED_BRACKETS": [[58523,0.14],[117045,0.205],[181440,0.26],[258482,0.29],[null,0.33]],
+  "ON_BPA": 12989,
+  "ON_BRACKETS": [[53891,0.0505],[107785,0.0915],[150000,0.1116],[220000,0.1216],[null,0.1316]]
+}
+</script>
+
+<div id="gate" class="card">
+  <h2 style="margin-bottom:12px">SiteShot Admin</h2>
+  <p class="sub">Log in with your admin account to continue.</p>
+  <input id="gate-email" type="email" placeholder="Email" autocomplete="username" onkeydown="if(event.key==='Enter')document.getElementById('gate-password').focus()">
+  <div style="height:10px"></div>
+  <input id="gate-password" type="password" placeholder="Password" autocomplete="current-password" onkeydown="if(event.key==='Enter')tryUnlock()">
+  <div style="height:10px"></div>
+  <button class="btn primary" style="width:100%" id="gate-unlock-btn" onclick="tryUnlock()">Unlock</button>
+  <div id="gate-err" class="stub-note" style="display:none;color:var(--danger);margin-top:8px"></div>
+</div>
+
+<div class="app" id="app-root" style="display:none">
+  <header class="top">
+    <h1>SiteShot Admin</h1>
+    <div style="display:flex;align-items:center;gap:10px">
+      <span class="tag">firms · stats · tax rates<span class="dirty-dot" id="dirty-dot" title="Unsaved changes"></span></span>
+      <button class="btn small ghost theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- ============================= OVERVIEW ============================= -->
+  <div class="card">
+    <h2>Overview</h2>
+    <p class="sub" id="stats-updated">Loading…</p>
+    <div class="row" id="stats-cards"></div>
+  </div>
+
+  <!-- =============================== FIRMS =============================== -->
+  <div class="card">
+    <h2>Firms on this site</h2>
+    <p class="sub">Every CPA/accounting firm signed up, with how much they've used the platform.</p>
+    <div style="overflow-x:auto">
+      <table class="brackets" id="firms-table">
+        <tr>
+          <th>Firm</th><th>Email</th><th>Phone</th><th>Signed up</th>
+          <th>Businesses</th><th>Employees</th><th>Pay periods</th><th>Submissions</th>
+        </tr>
+        <tr><td colspan="8" class="hint">Loading…</td></tr>
+      </table>
+    </div>
+    <div class="row" style="margin-top:12px;margin-bottom:0">
+      <button class="btn small ghost" onclick="loadAdminStats()">Refresh</button>
+    </div>
+  </div>
+
+  <div class="banner">
+    This page <strong>is</strong> <code class="inline">tax-rates.js</code>'s replacement — every per-CPA
+    paystub site fetches this exact file and reads the rates embedded in it.
+    Edit below, then use <strong>Save changes</strong> to download an updated
+    copy of this same file to commit back to the <code class="inline">payroll-shared</code> repo.
+  </div>
+  <div class="banner warn" id="unsaved-banner" style="display:none">
+    You have unsaved edits. They only take effect for CPA sites once you download and commit the updated file.
+  </div>
+  <div class="banner">
+    Ontario's surtax, Health Premium, and tax-reduction thresholds (factors V1/V2/S in
+    CRA's T4127) are set directly by the Income Tax Act (Ontario) and rarely change —
+    they're kept as constants in <code class="inline">index.html</code> rather than
+    fields here. If Ontario ever updates them, they'll need a code edit, not a rate update.
+  </div>
+
+  <div id="sections"></div>
+
+  <div class="card">
+    <h2>Save changes</h2>
+    <p class="sub">Regenerates this exact file with your edited values baked in. Commit the download over the current <code class="inline">tax-rates.html</code> in your payroll-shared repo.</p>
+    <div class="row" style="margin-bottom:0">
+      <button class="btn primary" onclick="saveChanges()">Download updated file</button>
+      <button class="btn small ghost" onclick="revertChanges()">Revert to last saved</button>
+    </div>
+    <div id="save-status" class="stub-note"></div>
+    <details style="margin-top:14px">
+      <summary style="cursor:pointer;font-size:12px;color:var(--ink-muted)">Show raw data (advanced)</summary>
+      <textarea id="output" rows="12" readonly style="margin-top:8px"></textarea>
+    </details>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script>
+// ---- SUPABASE -----------------------------------------------------------
+// Same project app.html/index.html talk to. The REAL check here isn't a
+// passcode anymore — it's a normal Supabase login, gated by the
+// `admin_dashboard_stats()` Postgres function refusing to run for anyone
+// whose profile doesn't have is_admin = true. There's no separate
+// "adminSecret" to keep in sync; whoever you flip is_admin on for is an
+// admin, full stop.
+const SUPABASE_URL = 'https://qcwvowcktquuixildyqj.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFjd3Zvd2NrdHF1dWl4aWxkeXFqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU4NDg3MTQsImV4cCI6MjEwMTQyNDcxNH0.ljSnitxTwmOvSYOnz8b3GNxna-Ol20lPV44AkfyjFMs';
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+// ---- Theme (light/dark) ----
+const THEME_KEY = 'ss_theme';
+function getTheme(){
+  try{ return localStorage.getItem(THEME_KEY) || 'light'; }catch(e){ return 'light'; }
+}
+function applyTheme(theme){
+  document.documentElement.setAttribute('data-theme', theme);
+  document.documentElement.style.colorScheme = theme;
+  const btn = document.getElementById('theme-toggle-btn');
+  if (btn) {
+    btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    btn.title = btn.getAttribute('aria-label');
+  }
+}
+function toggleTheme(){
+  const next = getTheme() === 'dark' ? 'light' : 'dark';
+  try{ localStorage.setItem(THEME_KEY, next); }catch(e){}
+  applyTheme(next);
+}
+applyTheme(getTheme());
+
+async function tryUnlock(){
+  const email = document.getElementById('gate-email').value.trim();
+  const password = document.getElementById('gate-password').value;
+  const btn = document.getElementById('gate-unlock-btn');
+  const err = document.getElementById('gate-err');
+  err.style.display = 'none';
+  if(!email || !password){ err.textContent = 'Enter your email and password.'; err.style.display = 'block'; return; }
+
+  btn.disabled = true; btn.textContent = 'Checking…';
+  try{
+    const { error: loginErr } = await sb.auth.signInWithPassword({ email, password });
+    if(loginErr) throw new Error(loginErr.message);
+
+    // The real gate: admin_dashboard_stats() refuses to run for anyone
+    // whose profile isn't flagged is_admin — a correct login alone isn't
+    // enough, so this is what makes it real auth rather than a cosmetic
+    // client-side check.
+    try{
+      await fetchAdminStats_();
+    }catch(statsErr){
+      await sb.auth.signOut(); // don't leave a signed-in non-admin session sitting around
+      throw statsErr;
+    }
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('app-root').style.display = 'block';
+    renderAdminStats_(lastAdminStats_);
+  }catch(ex){
+    err.textContent = ex.message || 'Could not log in.';
+    err.style.display = 'block';
+  }finally{
+    btn.disabled = false; btn.textContent = 'Unlock';
+  }
+}
+
+let lastAdminStats_ = null;
+
+async function fetchAdminStats_(){
+  const { data, error } = await sb.rpc('admin_dashboard_stats');
+  if(error) throw new Error(error.message || 'Could not load admin data.');
+  const accounts = (data || []).map(a => ({
+    id: a.id, firmName: a.firmName, email: a.email, phone: a.phone,
+    street: a.street, citystate: a.citystate,
+    createdAt: new Date(a.createdAt).getTime(),
+    disabled: !!a.disabled,
+    businessCount: a.businessCount, employeeCount: a.employeeCount,
+    payPeriodCount: a.payPeriodCount, remittanceCount: a.remittanceCount,
+    submissionCount: a.submissionCount
+  }));
+  const thirtyDaysAgo = Date.now() - 30 * 24 * 60 * 60 * 1000;
+  const totals = accounts.reduce((t, a) => {
+    t.totalBusinesses += a.businessCount || 0;
+    t.totalEmployees += a.employeeCount || 0;
+    t.totalPayPeriods += a.payPeriodCount || 0;
+    t.totalRemittances += a.remittanceCount || 0;
+    t.totalSubmissions += a.submissionCount || 0;
+    if(a.createdAt >= thirtyDaysAgo) t.signupsLast30Days++;
+    return t;
+  }, { totalBusinesses:0, totalEmployees:0, totalPayPeriods:0, totalRemittances:0, totalSubmissions:0, signupsLast30Days:0 });
+  totals.totalFirms = accounts.length;
+  const result = { success: true, accounts, totals };
+  lastAdminStats_ = result;
+  return result;
+}
+
+async function loadAdminStats(){
+  const statusEl = document.getElementById('stats-updated');
+  statusEl.textContent = 'Refreshing…';
+  try{
+    const data = await fetchAdminStats_();
+    renderAdminStats_(data);
+  }catch(ex){
+    statusEl.textContent = 'Could not refresh: ' + (ex.message || 'unknown error');
+    toast('Refresh failed');
+  }
+}
+
+function fmtDate_(ms){
+  const n = Number(ms);
+  if(!n) return '—';
+  return new Date(n).toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' });
+}
+
+function renderAdminStats_(data){
+  const t = data.totals || {};
+  document.getElementById('stats-cards').innerHTML = [
+    ['Firms', t.totalFirms],
+    ['Signups (30d)', t.signupsLast30Days],
+    ['Businesses', t.totalBusinesses],
+    ['Employees', t.totalEmployees],
+    ['Pay periods run', t.totalPayPeriods],
+    ['Client submissions', t.totalSubmissions]
+  ].map(([label, val]) => `
+    <div class="field" style="min-width:130px">
+      <label>${label}</label>
+      <div style="font-size:20px;font-weight:700;color:var(--accent)">${val ?? 0}</div>
+    </div>
+  `).join('');
+  document.getElementById('stats-updated').textContent = 'Updated ' + new Date().toLocaleTimeString();
+
+  const rows = (data.accounts || []).map(a => `
+    <tr style="${a.disabled ? 'opacity:0.55' : ''}">
+      <td>${escapeHtml_(a.firmName || '(no name)')}</td>
+      <td>${escapeHtml_(a.email || '')}</td>
+      <td>${escapeHtml_(a.phone || '')}</td>
+      <td>${fmtDate_(a.createdAt)}</td>
+      <td>${a.businessCount ?? 0}</td>
+      <td>${a.employeeCount ?? 0}</td>
+      <td>${a.payPeriodCount ?? 0}</td>
+      <td>${a.submissionCount ?? 0}</td>
+      <td>${a.disabled ? '<span style="color:var(--danger);font-weight:600">Disabled</span>' : '<span style="color:var(--accent)">Active</span>'}</td>
+      <td style="white-space:nowrap">
+        <button class="btn small ghost" onclick="toggleAccountDisabled_('${a.id}', ${a.disabled ? 'false' : 'true'}, '${escapeHtml_(a.firmName || a.email || 'this account').replace(/'/g,"\\'")}')">${a.disabled ? 'Enable' : 'Disable'}</button>
+        <button class="btn small ghost" style="color:var(--danger)" onclick="deleteAccount_('${a.id}', '${escapeHtml_(a.firmName || a.email || 'this account').replace(/'/g,"\\'")}')">Delete</button>
+      </td>
+    </tr>
+  `).join('');
+  document.getElementById('firms-table').innerHTML = `
+    <tr>
+      <th>Firm</th><th>Email</th><th>Phone</th><th>Signed up</th>
+      <th>Businesses</th><th>Employees</th><th>Pay periods</th><th>Submissions</th><th>Status</th><th>Actions</th>
+    </tr>
+    ${rows || '<tr><td colspan="10" class="hint">No firms signed up yet.</td></tr>'}
+  `;
+}
+
+// Disables/re-enables a firm's login. Disabling blocks new sign-ins right
+// away (Supabase Auth checks this at login) and revokes any refresh token
+// they're currently holding, so their session dies as soon as their
+// current access token expires (up to ~1hr) rather than staying valid
+// indefinitely. Their data is untouched -- this is reversible.
+async function toggleAccountDisabled_(id, disable, label){
+  const verb = disable ? 'disable' : 're-enable';
+  if(!confirm(`${disable ? 'Disable' : 'Re-enable'} login for "${label}"? ${disable ? 'They will be signed out and unable to log back in until re-enabled.' : 'They will be able to log in again.'}`)) return;
+  try{
+    const { error } = await sb.rpc('admin_set_account_disabled', { target_id: id, disabled: disable });
+    if(error) throw new Error(error.message);
+    toast(disable ? 'Account disabled' : 'Account re-enabled');
+    await loadAdminStats();
+  }catch(ex){
+    toast('Could not ' + verb + ' account: ' + (ex.message || 'unknown error'));
+  }
+}
+
+// Permanently deletes a firm's account and everything tied to it
+// (businesses, employees, pay periods, remittances, client submissions).
+// Not reversible -- double-confirms with the firm's name typed back.
+async function deleteAccount_(id, label){
+  if(!confirm(`Permanently delete "${label}" and ALL of their data (businesses, employees, pay periods, remittances, submissions)? This cannot be undone.`)) return;
+  const typed = prompt(`Type the firm name exactly to confirm deletion:\n\n${label}`);
+  if(typed !== label){ toast('Deletion cancelled — name did not match'); return; }
+  try{
+    const { error } = await sb.rpc('admin_delete_account', { target_id: id });
+    if(error) throw new Error(error.message);
+    toast('Account deleted');
+    await loadAdminStats();
+  }catch(ex){
+    toast('Could not delete account: ' + (ex.message || 'unknown error'));
+  }
+}
+
+function escapeHtml_(s){
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// ============================================================================
+// SCHEMA — add new settings sections/fields here later; the form and the
+// saved file both follow from this one definition.
+// Field types: 'number' | 'percent' | 'brackets'
+// ============================================================================
+const SETTINGS_SCHEMA = [
+  { section:'General', fields:[
+    { key:'PAY_PERIODS_PER_YEAR', label:'Pay periods per year', type:'number', hint:'26 = biweekly, 24 = semi-monthly, 52 = weekly' }
+  ]},
+  { section:'CPP (Canada Pension Plan)', fields:[
+    { key:'CPP_RATE', label:'CPP rate — total (base + enhancement)', type:'percent' },
+    { key:'CPP_BASE_RATE', label:'CPP rate — base only', type:'percent', hint:'Used only to calculate the K2 tax credit, per CRA rules' },
+    { key:'CPP_EXEMPT_ANNUAL', label:'Annual exemption ($)', type:'number' },
+    { key:'CPP_MAX_ANNUAL', label:'Annual max contribution — total ($)', type:'number' },
+    { key:'CPP_MAX_ANNUAL_BASE', label:'Annual max contribution — base only ($)', type:'number' },
+    { key:'CPP_YMPE', label:"Year's Maximum Pensionable Earnings ($)", type:'number', hint:'CPP2 starts above this' },
+    { key:'CPP_YAMPE', label:"Year's Additional Maximum Pensionable Earnings ($)", type:'number', hint:'CPP2 stops above this' },
+    { key:'CPP2_RATE', label:'CPP2 rate', type:'percent' },
+    { key:'CPP2_MAX_ANNUAL', label:'CPP2 annual max contribution ($)', type:'number' }
+  ]},
+  { section:'EI (Employment Insurance)', fields:[
+    { key:'EI_RATE', label:'EI rate', type:'percent' },
+    { key:'EI_MAX_ANNUAL', label:'Annual max premium ($)', type:'number' },
+    { key:'EI_EMPLOYER_MULTIPLIER', label:'Employer premium multiplier', type:'number', hint:'CRA standard is 1.4× the employee premium' }
+  ]},
+  { section:'Federal Income Tax', fields:[
+    { key:'FED_BPA', label:'Basic personal amount ($)', type:'number' },
+    { key:'FED_CEA', label:'Canada Employment Amount ($)', type:'number', hint:'Feeds the K4 tax credit' },
+    { key:'FED_BRACKETS', label:'Tax brackets', type:'brackets' }
+  ]},
+  { section:'Ontario Income Tax', fields:[
+    { key:'ON_BPA', label:'Basic personal amount ($)', type:'number' },
+    { key:'ON_BRACKETS', label:'Tax brackets', type:'brackets' }
+  ]}
+];
+
+// Load the canonical values straight out of the embedded data block above —
+// this page always displays exactly what's currently live.
+function readEmbedded(){
+  const raw = JSON.parse(document.getElementById('rates-data').textContent);
+  Object.keys(raw).forEach(k => {
+    if(Array.isArray(raw[k])) raw[k] = raw[k].map(([limit,rate]) => [limit === null ? Infinity : limit, rate]);
+  });
+  return raw;
+}
+
+let saved = readEmbedded();
+let current = JSON.parse(JSON.stringify(saved, (k,v) => v===Infinity ? '__INF__' : v), (k,v) => v==='__INF__' ? Infinity : v);
+
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+function markDirty(){
+  const isDirty = JSON.stringify(current) !== JSON.stringify(saved);
+  document.getElementById('dirty-dot').style.display = isDirty ? 'inline-block' : 'none';
+  document.getElementById('unsaved-banner').style.display = isDirty ? 'block' : 'none';
+  regeneratePreview();
+}
+
+// ---------------------------------------------------------------------------
+// RENDER FORM
+// ---------------------------------------------------------------------------
+function renderSections(){
+  const root = document.getElementById('sections');
+  root.innerHTML = SETTINGS_SCHEMA.map(sec => `
+    <div class="card">
+      <h2>${sec.section}</h2>
+      ${sec.fields.map(f => renderField(f)).join('')}
+    </div>
+  `).join('');
+}
+
+function renderField(f){
+  if(f.type === 'brackets') return renderBrackets(f);
+  const val = f.type === 'percent' ? Math.round(current[f.key]*1000000)/10000 : current[f.key];
+  return `
+    <div class="row">
+      <div class="field">
+        <label>${f.label}${f.type==='percent' ? ' (%)' : ''}</label>
+        <input type="number" step="0.01" id="field-${f.key}" value="${val}"
+               onchange="updateField('${f.key}','${f.type}',this.value)">
+        ${f.hint ? `<span class="hint">${f.hint}</span>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+function updateField(key, type, val){
+  const num = parseFloat(val);
+  if(isNaN(num)){ toast('Enter a valid number'); return; }
+  current[key] = type === 'percent' ? num/100 : num;
+  markDirty();
+}
+
+function renderBrackets(f){
+  const brackets = current[f.key];
+  const rows = brackets.map((b,i) => {
+    const [limit, rate] = b;
+    const isLast = i === brackets.length - 1;
+    return `
+      <tr>
+        <td>${isLast ? '<span class="hint">no limit</span>' :
+          `<input type="number" step="1" value="${limit}" onchange="updateBracketLimit('${f.key}',${i},this.value)">`}</td>
+        <td><input type="number" step="0.0001" value="${(rate*100).toFixed(4)}" onchange="updateBracketRate('${f.key}',${i},this.value)"></td>
+        <td>${isLast ? '' : `<button class="btn small danger" onclick="removeBracket('${f.key}',${i})">Remove</button>`}</td>
+      </tr>`;
+  }).join('');
+  return `
+    <div class="field" style="min-width:100%">
+      <label>${f.label}</label>
+      <table class="brackets">
+        <tr><th>Up to income of ($)</th><th>Rate (%)</th><th></th></tr>
+        ${rows}
+      </table>
+      <div style="margin-top:8px"><button class="btn small ghost" onclick="addBracket('${f.key}')">+ Add bracket</button></div>
+    </div>
+  `;
+}
+
+function updateBracketLimit(key, i, val){
+  const num = parseFloat(val);
+  if(isNaN(num)){ toast('Enter a valid number'); return; }
+  current[key][i][0] = num;
+  markDirty();
+}
+function updateBracketRate(key, i, val){
+  const num = parseFloat(val);
+  if(isNaN(num)){ toast('Enter a valid number'); return; }
+  current[key][i][1] = num/100;
+  markDirty();
+}
+function addBracket(key){
+  const brackets = current[key];
+  const lastFinite = brackets.length >= 2 ? brackets[brackets.length-2][0] : 0;
+  brackets.splice(brackets.length-1, 0, [lastFinite + 10000, brackets[brackets.length-1][1]]);
+  renderSections();
+  markDirty();
+}
+function removeBracket(key, i){
+  if(current[key].length <= 1){ toast('Need at least one bracket'); return; }
+  current[key].splice(i,1);
+  renderSections();
+  markDirty();
+}
+
+function revertChanges(){
+  current = JSON.parse(JSON.stringify(saved, (k,v) => v===Infinity ? '__INF__' : v), (k,v) => v==='__INF__' ? Infinity : v);
+  renderSections();
+  markDirty();
+  toast('Reverted to last saved values');
+}
+
+// ---------------------------------------------------------------------------
+// GENERATE / SAVE — self-fetches this page's own live source, swaps only the
+// embedded data block, and offers the result as a download. Everything else
+// in the file (styles, form logic) comes through untouched.
+// ---------------------------------------------------------------------------
+function exportJson(){
+  const out = {};
+  Object.keys(current).forEach(k => {
+    out[k] = Array.isArray(current[k])
+      ? current[k].map(([limit,rate]) => [limit===Infinity ? null : limit, rate])
+      : current[k];
+  });
+  return JSON.stringify(out, null, 2);
+}
+
+function regeneratePreview(){
+  document.getElementById('output').value = exportJson();
+}
+
+async function saveChanges(){
+  const statusEl = document.getElementById('save-status');
+  statusEl.textContent = 'Reading current file…';
+  try{
+    const sourceText = await fetch(location.href, {cache:'no-store'}).then(r => {
+      if(!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    });
+    const newJson = exportJson();
+    const pattern = /(<script type="application\/json" id="rates-data">)[\s\S]*?(<\/script>)/;
+    if(!pattern.test(sourceText)) throw new Error('rates-data block not found in fetched source');
+    const updated = sourceText.replace(pattern, (m, open, close) => `${open}\n${newJson}\n${close}`);
+
+    const blob = new Blob([updated], {type:'text/html'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'tax-rates.html';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 5000);
+
+    saved = JSON.parse(JSON.stringify(current, (k,v) => v===Infinity ? '__INF__' : v), (k,v) => v==='__INF__' ? Infinity : v);
+    markDirty();
+    statusEl.textContent = 'Downloaded — commit this file over tax-rates.html in your payroll-shared repo to go live.';
+    toast('Downloaded updated file');
+  }catch(err){
+    console.error(err);
+    statusEl.textContent = 'Could not self-read this file (' + err.message + '). This only works when the page is hosted over http(s) — e.g. on GitHub Pages — not opened directly from disk.';
+    toast('Save failed — see note below');
+  }
+}
+
+renderSections();
+regeneratePreview();
+</script>
+</body>
+</html>
